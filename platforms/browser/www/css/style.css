@@ -1,0 +1,422 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    outline: 0;
+}
+
+/** ===============================================
+    ================== NAVIGATION =================
+    =============================================== */
+
+.navbar-nav {
+    width: 100%;
+}
+
+.nav-link {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav a {
+    color: white;
+    opacity: .7;
+    text-decoration: none;
+}
+
+.navbar-nav a:hover{
+    color: white;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.nav-item i {
+    opacity: .7;
+}
+
+.nav-item:hover i {
+    opacity: 1;
+}
+
+.nav-item:hover a {
+    color: white;
+    opacity: 1;
+}
+
+.nav-item:hover .a-like {
+    color: white;
+    opacity: 1;
+}
+
+.nav-item a:hover {
+    color: white;
+    opacity: 1;
+}
+
+.nav-item .a-like {
+    color: white;
+    opacity: .7;
+    text-decoration: none;
+}
+
+.nav-item .a-like:hover {
+    color: white;
+    opacity: 1;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.nav-item .count {
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 8px;
+    height: 12px;
+    width: 12px;
+    line-height: 12px;
+    top: -3px;
+    right: -12px;
+    position: absolute;
+}
+
+a:hover .nav-item{
+    color: white;
+    opacity: 1;
+    cursor: pointer;
+}
+
+a:hover .nav-item i{
+    color: white;
+    opacity: 1;
+    cursor: pointer;
+}
+
+/** ===============================================
+    ============= MULTI-LVL DROPDOWN ==============
+    =============================================== */
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    /* left: 100%; */
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+/** ===============================================
+    ==================== TABLES ===================
+    =============================================== */
+
+table {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+table input[type="text"] {
+    max-width: 200px;
+}
+
+table select {
+    min-width: 150px;
+}
+
+@media screen and (max-width: 500px) {
+    table select {
+        max-width: 100px;
+    }
+}
+
+table i:not(.static){
+    opacity: .8;
+}
+
+table i:not(.static):hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+i[disabled]{
+    opacity: .5;
+}
+
+ i[disabled]:hover{
+    opacity: .5;
+    cursor: default;
+}
+
+td i[disabled]{
+   opacity: .5;
+}
+
+td i[disabled]:hover{
+   opacity: .5;
+   cursor: default;
+}
+
+/** ===============================================
+    ==================== ICONS ====================
+    =============================================== */
+
+.icon-big {
+    font-size: 1.5em;
+    padding: .2em;
+}
+
+.icon-small {
+    font-size: 1em;
+    padding: .2em;
+}
+
+.icon-giant {
+    font-size: 8em;
+    padding: 0em;
+}
+
+/** ===============================================
+    ==================== COLORS ===================
+    =============================================== */
+
+.bg-custom-blue {
+    background-color: #006da0;
+}
+
+.no-bg {
+    background-color: transparent;
+}
+
+.bg-light-grey {
+    background-color: rgb(218, 218, 218);
+}
+
+.bg-custom-green{
+    background-color: #3ba048;
+}
+
+.switch-bg-blue:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #007bff;
+    background-color: #007bff;
+}
+
+.switch-bg-green:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #3ba048;
+    background-color: #3ba048;
+}
+
+.text-blue{
+    color: #007bff;
+}
+
+/** ===============================================
+    ==================== SIZES ====================
+    =============================================== */
+
+.mw-200 {
+    max-width: 200px;
+}
+
+.mw-600 {
+    max-width: 600px;
+}
+
+.mh-200{
+    height: 200px;
+}
+
+.scale-half{
+    transform: scale(.9);
+}
+
+.img-big{
+    height: 100%;
+    width: 100%;
+}
+
+.h-c-50{
+    height: 40px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.h-150{
+    height: 150px;
+}
+
+.h-200{
+    height: 200px;
+}
+
+/** ===============================================
+    ============ ALIGNMENT / POSITION =============
+    =============================================== */
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .vertical-center {
+        display: block;
+        clear: both;
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+/** ===============================================
+    ==================== MISC =====================
+    =============================================== */
+
+.custom-control {
+    text-align: center;
+}
+
+.custom-control label:hover {
+    cursor: pointer;
+}
+
+.breadcrumbs {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(187, 197, 207);
+    border: none;
+    margin-bottom: 20px;
+}
+
+.iconed-btn{
+    display: inline-block;
+    height: 40px;
+    vertical-align: middle;
+    padding-right: 10px;
+    text-decoration: none;
+
+    margin-top: .3em;
+    margin-bottom: 1em;
+}
+
+.iconed-btn:hover{
+    opacity: 1;
+}
+
+.iconed-btn p{
+    display: inline-block;
+    margin: 0;
+    margin-left: 5px;
+    padding: 0;
+    line-height: 33px;
+    text-decoration: none;
+
+    vertical-align: top;
+}
+
+a.nostyle-a{
+    text-decoration: none;
+    color: black;
+}
+
+.hoverable{
+    opacity: .8;
+}
+
+.hoverable:hover{
+    opacity: 1;
+}
+
+.clickable:hover{
+    cursor: pointer;
+}
+
+.clickable *:hover{
+    cursor: pointer;
+}
+
+.break-word{
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.table-striped-3>tbody>tr:nth-child(4n+0){
+    background-color:rgba(0, 0, 0, .05);
+}
+
+.table-striped-3>tbody>table{
+    background-color:rgba(0, 0, 0, 0);
+}
+
+.filter-row{
+    background-color:rgba(0, 0, 0, .08);
+}
+
+.modal { overflow-y: auto !important; }
+
+.b-red{
+    border: 1px solid red;
+}
+
+.clickable:hover{
+    cursor: pointer;
+}
+
+.no-after::after{
+    display: none;
+}
+
+.no-before::before{
+    display: none;
+}

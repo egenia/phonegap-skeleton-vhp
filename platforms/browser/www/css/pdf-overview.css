@@ -1,0 +1,55 @@
+.pdf-overview-bg {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+    overflow-y: scroll;
+    z-index: 9999;
+}
+
+.pdf-overview-export-button {
+    width: 200px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 3px;
+    color: white;
+    margin: 20px auto;
+}
+
+.pdf-overview-export-button:hover {
+    background-color: rgb(103, 178, 253);
+    cursor: pointer;
+}
+
+.pdf-overview-green-btn{
+    background-color: #3ba048;
+}
+
+.pdf-overview-green-btn:hover{
+    background-color: #66c973;
+}
+
+.pdf-overview-blue-btn{
+    background-color: #007bff;
+}
+
+.pdf-overview-blue-btn:hover{
+    background-color: #4aa0fc;
+}
+
+.pdf-overview {
+    border: 2px solid black;
+    background-color: white;
+    width: 210mm;
+    margin-left: calc(50% - 400px);
+    z-index: 99999;
+    margin-bottom: 50px;
+}
+
+.pdf-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

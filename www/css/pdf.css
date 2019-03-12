@@ -1,0 +1,270 @@
+/** ==========================================================
+    ================== PDF BASIC STYLING =====================
+    ========================================================== */
+
+/** 
+ * Because we want to avoid relying on external libs,
+ * all CSS for PDFs has to written from scratch.
+ */
+
+.pdf *{
+    all: initial;
+
+    font-family: "Arial";
+    color: black;
+    font-size: 12px;
+}
+
+.pdf div{
+    display: block;
+    position: relative;
+}
+
+.pdf p{
+    display: block;
+    position: relative;
+}
+
+.pdf {
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 1000px;
+}
+
+.pdf table{
+    width: 100%;
+    display: table;
+    border-spacing: 0px;
+    border: none;
+    border-collapse: collapse;
+    background-color: none;
+}
+
+.pdf table *{
+    padding: 8px;
+}
+
+.pdf table th{
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.pdf table tr{
+    display: table-row;
+    vertical-align: inherit;
+}
+
+.pdf table td{
+    display: table-cell;
+    vertical-align: inherit;
+    border-bottom: 1px solid gray;
+    background-color: none;
+}
+
+.pdf table thead{
+    display: table-header-group;
+    vertical-align: middle;
+    border: none;
+}
+
+
+.pdf table th *{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+
+.pdf .table-bordered td, .table-bordered th {
+    border: none;
+}
+
+.pdf .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+}
+
+.pdf table tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.pdf table tfoot{
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.pdf .e4coll-logo{
+    width: 350px;
+    height: 150px;
+    border: 2px solid grey;
+    background-color: rgb(210, 210, 255);
+    margin: 10px auto;
+}
+
+.pdf .contacts {
+    border-left: 3px solid black;
+    padding-left: 10px;
+    text-align: left;
+    margin: 10px;
+}
+
+.pdf .contacts h1{
+    color: black;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.pdf .contacts p{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.pdf .stamp{
+    width: 90%;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+    min-height: 80px;
+    line-height: 40px;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.pdf .address{
+    padding: 20px;
+}
+
+.pdf .address p{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.pdf p.mention{
+    font-size: 12px;
+    line-height: 14px; 
+    font-weight: bold;
+    font-style: italic;
+}
+
+.pdf .in-block{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.pdf .w-50-perc{
+    width: 49%;
+}
+
+.pdf .text-left{
+    text-align: left;
+}
+
+.pdf .fa-check{
+    padding: 0;
+    margin: 0;
+    width: 12px;
+    height: 100%;
+    margin-top: -6px;
+    margin: 0px;
+}
+
+.pdf .fa-check::before{
+    color: #17a2b8!important;
+    content: '✔';
+}
+
+.pdf .fl-fix{
+    overflow: auto;
+}
+
+.pdf .fl-right{
+    float: right;
+}
+
+.pdf .float-right{
+    float: right;
+}
+
+.pdf .fl-right::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.pdf .summary *{
+    color: white;
+    font-weight: bold;
+}
+
+.pdf .summary table {
+    padding: 10px;
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.pdf .summary table tr{
+    border: none;
+    background-color: transparent;
+}
+
+.pdf .summary table td{
+    padding: 8px 15px;
+    border: none;
+    background-color: transparent;
+}
+
+.pdf .break-word{
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/** ==========================================================
+    ======================== COLORS ==========================
+    ========================================================== */
+
+.pdf .blue-bg{
+    background-color: #1f80e7;
+}
+
+.pdf .blue-table table thead{
+    background-color: #1f80e7;
+}
+
+.pdf .blue-table table tr:nth-child(even) {
+    background-color: rgba(31, 128, 231, 0.2);
+}
+
+.pdf .green-bg{
+    background-color: #3ba048;
+}
+
+.pdf .green-table table thead{
+    background-color: #3ba048;
+}
+
+.pdf .green-table table tr:nth-child(even) {
+    background-color: rgba(59, 160, 72, 0.2);
+}
