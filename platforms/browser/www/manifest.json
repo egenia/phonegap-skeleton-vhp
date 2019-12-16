@@ -1,15 +1,12 @@
 {
-  "short_name": "E4COLL",
-  "name": "E4COLL Application",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    }
-  ],
-  "start_url": "/#/",
+  "background_color": "#FFF",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "name": "e4VHP",
+  "short_name": "e4VHP",
+  "version": "com.e4ia.e4vhp",
+  "description": "Application e4Mad tablettes.",
+  "author": "E4IA Team",
+  "icons": [],
+  "orientation": "landscape",
+  "start_url": "index.html"
 }

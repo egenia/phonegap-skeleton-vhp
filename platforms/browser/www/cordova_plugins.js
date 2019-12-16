@@ -418,6 +418,22 @@ module.exports = [
         "id": "phonegap-plugin-barcodescanner.BarcodeScannerProxy",
         "pluginId": "phonegap-plugin-barcodescanner",
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-video-editor/www/VideoEditor.js",
+        "id": "cordova-plugin-video-editor.VideoEditor",
+        "pluginId": "cordova-plugin-video-editor",
+        "clobbers": [
+            "VideoEditor"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-video-editor/www/VideoEditorOptions.js",
+        "id": "cordova-plugin-video-editor.VideoEditorOptions",
+        "pluginId": "cordova-plugin-video-editor",
+        "clobbers": [
+            "VideoEditorOptions"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -435,7 +451,8 @@ module.exports.metadata =
     "cordova-plugin-inappbrowser": "1.7.2",
     "cordova-plugin-network-information": "1.3.4",
     "cordova-plugin-vibration": "2.1.6",
-    "phonegap-plugin-barcodescanner": "8.0.1"
+    "phonegap-plugin-barcodescanner": "8.0.1",
+    "cordova-plugin-video-editor": "1.1.3"
 }
 // BOTTOM OF METADATA
 });
